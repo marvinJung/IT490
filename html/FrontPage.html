@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Welcome to Team Null's Stock Simulation!</title>
+		
+		<meta charset="UTF-8">
+		
+		<style>
+		form{width: auto; margin: auto ; border: auto;}
+		fieldset{font-size:13px; padding:15px; width:210px; line-height:1.8;}
+		select{width:180px;}
+		input[type=number]{width:180px; borderColor:"gray";}
+		input[type=text]{width:180px; borderColor:"gray";}
+		input[type=password]{width:180px; borderColor:"gray";}
+		input[type=email]{width:180px; borderColor:"gray";}
+
+		</style>
+		
+	</head>
+
+	<body>
+	<h2>Welcome to the Stock Simulator!</h2>
+		<!--Login related elements -->
+		<form method="get" action="loginPage.php" autocomplete="on">
+		<fieldset>
+		<legend>Login</legend>
+			ID<br />
+			<input type=text name="ID_input" placeholder="required" required="required" autofocus><br />
+			Password<br />
+			<input type=password name="pass_input" placeholder="required" required="required"><br />
+			<input type=submit value="LOGIN!">
+		</fieldset>
+		</form>
+		
+		<!--Registration related elements -->
+		<form method="get" action="registration.php" autocomplete="on">
+		<fieldset>
+		<legend>Registration</legend>
+			ID<br />
+			<input type=text name="ID_create" placeholder="required" required="required"><br />
+			Password<br />
+			<input type=password name="pass_create" autocomplete="off" placeholder="required" required="required"><br />
+			First Name<br />
+			<input type=text name="firstName_create" placeholder="required" required="required"><br />
+			Last Name<br />
+			<input type=text name="lastName_create" placeholder="required" required="required"><br />
+			Email<br />
+			<input type=email name="email_create" placeholder="required" required="required"><br />
+			<input type=submit value="Register me!">
+		</fieldset>
+		</form>
+	</body>
+</html>
